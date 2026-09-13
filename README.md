@@ -2,6 +2,14 @@
 
 Grafana alerts and dashboards in Paseo, built on the `gcx` CLI. The plugin uses whatever `gcx` context is current on the daemon machine; `gcx login` is the only setup.
 
+## Install
+
+```sh
+paseo plugin add jegork/paseo-grafana
+```
+
+Requires the `gcx` CLI, logged in on the daemon machine (`gcx login`).
+
 ## What it adds
 
 - **Grafana** sidebar surface: firing and pending alert instances (toggle to all), with links to the rule and its dashboard. *Investigate* picks a workspace and spawns an agent there with the rule's details and instructions to use the `investigate-alert` and `debug-with-grafana` skills through `gcx`.
